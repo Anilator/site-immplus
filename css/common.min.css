@@ -1,0 +1,11 @@
+*{-webkit-tap-highlight-color:transparent}html{font-size:100%;line-height:1.5;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent;-webkit-text-decoration-skip:objects}
+a:focus{outline:thin dotted}a:active,a:hover{outline:0}b,strong{font-weight:inherit}b,strong{font-weight:bolder}menu,ol,ul{padding:0;list-style:none;list-style-image:none}
+img{max-width:100%;border:0;border-style:none;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea{overflow:visible;font-size:100%;margin:0;line-height:normal;text-transform:none;vertical-align:baseline;*vertical-align:middle}
+button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;*overflow:visible}
+button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;border-style:none;padding:0;outline:1px dotted ButtonText}
+input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;*height:13px;*width:13px}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}textarea{margin:0;font-size:100%;overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+html,button,input,select,textarea{color:#333;font-family:sans-serif;font-size:16px;line-height:1.5}h1,h2,h3,h4,h5,h6{margin:0;font-weight:normal}a{color:#555}
+a:focus{outline:0}a:hover{text-decoration:none}a:visited{color:#765}img{height:auto}.app{min-width:320px}.app__row{padding:0 8px;background:#fff}.app__block{padding:40px 0}
+@media screen and (min-width:976px){.app__row{padding:0}.app__block{margin:auto;max-width:960px;padding:40px 0}}

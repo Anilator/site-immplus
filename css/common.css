@@ -1,0 +1,228 @@
+/** NORMALIZATION ** ( github.com/necolas/normalize.css )
+    ========================================================================== */
+    * {
+        -webkit-tap-highlight-color: transparent;
+    }
+    html {
+        font-size: 100%;
+        line-height: 1.5;
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+    }
+    body {margin: 0;}
+    a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+    }
+    a:focus {outline: thin dotted;}
+    a:active,a:hover {outline: 0;}
+    b,strong {font-weight: inherit;}
+    b,strong {font-weight: bolder;}
+    menu,ol,ul {
+        padding: 0;
+        list-style: none;
+        list-style-image: none;
+    }
+    img {
+        max-width: 100%;
+        border: 0;
+        border-style: none;
+        -ms-interpolation-mode: bicubic;
+    }
+    svg:not(:root) {overflow: hidden;}
+    hr {
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        height: 0;
+        overflow: visible;
+    }
+    button,input,select,textarea {
+        overflow: visible;
+        font-size: 100%;
+        margin: 0;
+        line-height: normal;
+        text-transform: none;
+        vertical-align: baseline;
+        *vertical-align: middle;
+    }
+    button, html input[type="button"], input[type="reset"], input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+        *overflow: visible;
+    }
+    button[disabled], html input[disabled] {cursor: default;}
+    button::-moz-focus-inner, input::-moz-focus-inner {
+        border: 0; border-style: none;
+        padding: 0;
+        outline: 1px dotted ButtonText;
+    }
+    input[type="checkbox"], input[type="radio"] {
+        box-sizing: border-box;
+        padding: 0;
+        *height: 13px;
+        *width: 13px;
+    }
+    ::-webkit-file-upload-button {
+        -webkit-appearance: button;
+        font: inherit;
+    }
+    textarea {
+        margin: 0;
+        font-size: 100%;
+        overflow: auto;
+        vertical-align: top;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+
+    /* optional resets ( git.io/normalize ) */
+        /*
+        article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block;}
+        audio,canvas,video {display: inline-block;*display: inline;*zoom: 1;}
+        audio:not([controls]) {display: none;height: 0;}
+        [hidden] {display: none;}
+
+        abbr[title] {border-bottom: 1px dotted;}
+        blockquote {margin: 0 40px;}
+        dfn {font-style: italic;}
+        mark {background: #ff0;color: #000;}
+        p,pre {margin: 1em 0;}
+        code,kbd,pre,samp {
+            font-family: monospace, serif;
+            _font-family: 'courier new', monospace;
+            font-size: 1em;
+        }
+        pre {
+            white-space: pre;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        q {quotes: none;}
+        q:before,q:after {
+            content: '';
+            content: none;
+        }
+        small {font-size: 80%;}
+        sub,sup {
+            position: relative;
+            font-size: 75%;
+            line-height: 0;
+            vertical-align: baseline;
+        }
+        sup {top: -0.5em;}
+        sub {bottom: -0.25em;}
+
+        dl,menu,ol,ul {margin: 1em 0;}
+        dd {margin: 0 0 0 40px;}
+        figure {margin: 0;}
+
+
+        form {margin: 0;}
+        fieldset {
+            border: 1px solid #c0c0c0;
+            margin: 0 2px;
+            padding: 0.35em 0.625em 0.75em;
+        }
+        legend {
+            border: 0;
+            padding: 0;
+            white-space: normal;
+            *margin-left: -7px;
+        }
+
+        input[type="search"] {
+            -webkit-appearance: textfield;
+            -moz-box-sizing: content-box;
+            -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+        input[type="search"]::-webkit-search-cancel-button,
+        input[type="search"]::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+        abbr[title] {
+            border-bottom: none;
+            text-decoration: underline;
+            text-decoration: underline dotted;
+        }
+        template {display: none;}
+        */
+
+/** FONT ICONS **
+    ===================================================== */
+    /*
+    @font-face {
+        font-family: 'icons';
+        src:  url('../fonts/icons.eot?qny8gk');
+        src:  url('../fonts/icons.eot?qny8gk#iefix') format('embedded-opentype'),
+        url('../fonts/icons.ttf?qny8gk') format('truetype'),
+        url('../fonts/icons.woff?qny8gk') format('woff'),
+        url('../fonts/icons.svg?qny8gk#icons') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    .icon {
+        font-family: 'icons' !important;
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .icon-instagram:before { content: "\ea92"; }
+    .icon-facebook:before { content: "\f09a"; }
+    .icon-letter:before { content: "\f003"; }
+    .icon-menu:before { content: "\e902"; }
+    .icon-x:before { content: "\e903"; }
+    .icon-arrow-left:before { content: "\e900"; }
+    .icon-arrow-right:before { content: "\e901"; }
+    */
+
+/** COMMON STYLES **
+    ===================================================== */
+    /*html, body { height: 100%; }*/
+    html,button,input,select,textarea {
+        color: #333;
+        font-family: sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    h1,h2,h3,h4,h5,h6 {
+        margin: 0;
+        font-weight: normal;
+    }
+
+    a { color: #555; }
+    a:focus { outline: none; }
+    a:hover { text-decoration: none; }
+    a:visited {color: #765;}
+
+    img { height: auto; }
+
+/** APP LAYOUT **
+    ===================================================== */
+    .app {
+        min-width: 320px;
+    }
+    .app__row {
+        padding: 0 8px;
+        background: #fff;
+    }
+    .app__block {
+        padding: 40px 0;
+    }
+    @media screen and (min-width: 976px) {
+        .app__row {
+            padding: 0;
+        }
+        .app__block {
+            margin: auto;
+            max-width: 960px;
+            padding: 40px 0;
+        }
+    }
