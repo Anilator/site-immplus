@@ -3,11 +3,8 @@
         content: [],
     };
 
-
-    // debugger;
     initMenu();
     getContent();
-})();
 
 
     function initMenu() {
@@ -82,7 +79,7 @@
             var extraClass = block.class ? ' '+block.class : '';
             var blockHtml =
                 '<div class="app__row'+ extraClass +'"'+ style +'>'+
-                    '<div class="app__block page" id="#'+ id +'">'+
+                    '<div class="app__block page" id="'+ id +'">'+
                         block.html +
                     '</div>'+
                 '</div>';
@@ -96,69 +93,5 @@
 
         $('.app__page').html( pageContent.join('\n') );
         $('.nav').html( navContent.join('\n') );
-
-
-        // var page = G.activePage;
-        // var content = '';
-        // var $gallery = $('.gallery');
-
-        // var activeBtnClass = 'nav__item-active';
-        // var $btn = $('.nav__item[data-page="'+ page +'"]').addClass(activeBtnClass);
-        // $btn.siblings().removeClass(activeBtnClass);
-
-
-        // var fullWidth = document.body.clientWidth;
-        // var heroImgSize = fullWidth * 2;
-        // var thumbImgSize = G.isMobile ? ~~(fullWidth / 3*2) : ~~(fullWidth / 4);
-
-
-        // $.each (G.works[page], function (i, work) {
-        //     var src;
-        //     if (work.heroImage) {
-        //         G.backgroundColor = work.backgroundColor;
-        //         src = changeImgSize(work.src, heroImgSize);
-        //         content =
-        //             '<div class="gallery__hero">'+
-        //                 '<img src="'+ src +'" class="zoom" data-i="'+ i +'">'+
-        //             '</div>' + content;
-        //     } else {
-        //         src = changeImgSize(work.src, thumbImgSize);
-        //         content +=
-        //             '<div class="gallery__thumb zoom" data-i="'+ i +'">'+
-        //                 '<div class="gallery__thumb_cont">'+
-        //                     '<img src="'+ src +'">'+
-        //                 '</div>'+
-        //             '</div>';
-        //     }
-        // });
-
-        // if (page == 'about') {
-        //     content = '<div class="about">'+ G.about +'</div>';
-        //     G.backgroundColor = '#eee';
-        // }
-
-
-        // $gallery.html(content).css('background', G.backgroundColor);
-
-        // $gallery.on('click', '.zoom', zoomImg);
     }
-
-
-
-    function changeImgSize(src, size) {
-        var srcSplitted = src.split('/');
-
-        srcSplitted[7] = 'w' + size;
-
-        return srcSplitted.join('/');
-    }
-    function zoomImg(e) {
-        var workNumber = $(e.currentTarget).data('i');
-
-        G.activeWork = workNumber;
-        saveToStorage();
-
-        var galleryPath = location.href.split('/');
-        galleryPath.splice(-1, 1, 'gallery.html');
-        location.href = galleryPath.join('/');
-    }
+})();

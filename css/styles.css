@@ -1,12 +1,14 @@
 /** HEADER **
     ===================================================== */
     .app__row-header {
+        position: relative;
         background: #fff;
         box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);
     }
     .header {
         display: table;
         height: 72px;
+        max-width: 1200px;
         padding: 0;
         width: 100%;
     }
@@ -25,7 +27,7 @@
     }
     .logo__text {
         display: inline-block;
-        width: 220px;
+        width: 200px;
         font-family: serif;
         font-size: 23px;
         line-height: 1;
@@ -33,10 +35,10 @@
     }
     @media screen and (min-width: 976px) {
         .logo {
-            width: 320px;
+            width: 280px;
         }
         .logo__text {
-            font-size: 30px;
+            font-size: 24px;
         }
     }
 
@@ -109,6 +111,11 @@
     }
     @media screen and (min-width: 976px) {
         .menu__btn { display: none; }
+
+        .menu__content {
+            display: table;
+            width: 100%;
+        }
     }
 
 
@@ -123,12 +130,12 @@
     }
     @media screen and (min-width: 976px) {
         .nav {
-            display: inline-block;
-            width: 440px;
+            display: table-cell;
             text-align: center;
             vertical-align: middle;
         }
         .nav__item {
+            margin: 0 16px;
             cursor: pointer;
         }
         .nav__item:hover,
@@ -144,14 +151,26 @@
 
 /** CONTACT **
     ===================================================== */
-    .contacts {}
+    .contacts {
+        text-align: justify;
+        line-height: 0;
+    }
+    .contacts:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
     .contacts__link {
+        display: inline-block;
         color: #777;
-        font-size: 24px;
+        font-size: 20px;
+        line-height: 40px;
+        text-align: left;
     }
     @media screen and (min-width: 976px) {
         .contacts {
-            display: inline-block;
+            display: table-cell;
+            width: 400px;
             vertical-align: middle;
         }
     }
@@ -164,11 +183,16 @@
         min-height: 300px;
         background: url(loader.svg) center center no-repeat;
     }
+    .app__row.fullwidth .app__block {
+        max-width: none;
+    }
+
     .app__page a {
         margin: 0 !important;
     }
-    .app__row.fullwidth .app__block {
-        max-width: none;
+    .app__page ul {
+        list-style: circle;
+        padding-left: 32px;
     }
 
 
