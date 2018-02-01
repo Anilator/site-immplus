@@ -67,7 +67,6 @@
             renderContent();
         }
     }
-
     function renderContent() {
         var navContent = [];
         var pageContent = [];
@@ -93,5 +92,19 @@
 
         $('.app__page').html( pageContent.join('\n') );
         $('.nav').html( navContent.join('\n') );
+
+        postProcessing();
+    }
+    function postProcessing() {
+        var $images = $('.slider .separator');
+        var $wrap = $('<div class="slider__wrap"></div>').insertBefore($images.first());
+        $images.detach().appendTo($wrap);
+
+        $wrap.lightSlider({
+            item: 1,
+            controls: false,
+            pager: false,
+            adaptiveHeight: true,
+        });
     }
 })();
