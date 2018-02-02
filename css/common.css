@@ -203,7 +203,7 @@
     a:hover { text-decoration: none; }
     a:visited {color: #765;}
 
-    img { height: auto; }
+    img { height: auto; vertical-align: middle; }
 
 /** APP LAYOUT **
     ===================================================== */
