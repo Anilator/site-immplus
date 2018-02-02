@@ -13,4 +13,5 @@
 .app__row.fullwidth .app__block{max-width:none;padding:0;line-height:0}.app__page h2{font-size:32px;margin-bottom:24px}.app__page h3{font-size:24px;margin-bottom:16px}
 .app__page h4{margin-bottom:8px;font-size:20px;font-weight:bold}.app__page a{margin:0!important}.app__page ul{list-style:circle;padding-left:32px}.taj{text-align:justify}
 .taj:after{content:'';display:inline-block;width:100%}.ik{display:inline-block}@media screen and (max-width:975px){.taj{text-align:center}
-.ik{margin-bottom:40px}}@media screen and (max-width:975px){.v_pc{display:none}}@media screen and (min-width:976px){.v_mob{display:none}}
+.ik{margin-bottom:40px;vertical-align:top}}@media screen and (max-width:975px){.v_pc{display:none}}@media screen and (min-width:976px){.v_mob{display:none}
+}

@@ -247,6 +247,7 @@
         }
         .ik {
             margin-bottom: 40px;
+            vertical-align: top;
         }
     }
 
@@ -256,3 +257,4 @@
     @media screen and (min-width: 976px) {
         .v_mob { display: none }
     }
+
