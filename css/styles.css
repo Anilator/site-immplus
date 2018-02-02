@@ -239,7 +239,8 @@
         width: 100%
     }
     .ik {
-        display: inline-block
+        display: inline-block;
+        vertical-align: top;
     }
     @media screen and (max-width: 975px) {
         .taj {
@@ -247,7 +248,6 @@
         }
         .ik {
             margin-bottom: 40px;
-            vertical-align: top;
         }
     }
 
