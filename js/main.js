@@ -104,6 +104,10 @@
             item: 1,
             controls: false,
             pager: false,
+
+            auto:true,
+            loop:true,
+            pauseOnHover: true,
         });
     }
 })();

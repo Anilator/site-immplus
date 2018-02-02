@@ -1,4 +1,4 @@
-.app__row-header{position:fixed;top:0;left:0;right:0;padding:0 8px;background:#fff;box-shadow:0 1px 2px 0 rgba(0,0,0,.3)}.header{display:table;height:72px;max-width:1200px;padding:0;width:100%}
+.app__row-header{position:fixed;top:0;left:0;right:0;z-index:100;padding:0 8px;background:#fff;box-shadow:0 1px 2px 0 rgba(0,0,0,.3)}.header{display:table;height:72px;max-width:1200px;padding:0;width:100%}
 .header__item{display:table-cell;vertical-align:middle}.logo__img{height:64px;vertical-align:middle}.logo__text{display:inline-block;width:200px;font-family:serif;font-size:20px;line-height:1;vertical-align:middle}
 @media screen and (min-width:976px){.logo{width:280px}.logo__text{font-size:24px}}.menu{user-select:none;-webkit-user-select:none}@media screen and (max-width:975px){.menu__btn{position:fixed;right:0;top:0;height:56px;padding-top:16px;width:64px;z-index:10;color:#fff;font-size:36px;text-align:center;text-shadow:0 1px 1px #555}
 .menu__content{display:none;overflow:auto;position:fixed;bottom:0;left:0;right:0;top:0;z-index:11;padding-top:40px;text-align:center;background:#eee}.menu__content.active{display:block}
