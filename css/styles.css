@@ -237,11 +237,13 @@
 
 /** GLOBAL MODIFIERS **
     ===================================================== */
-    .taj {
-        text-align: center;
-    }
-    .ik {
-        margin-bottom: 40px;
+    @media screen and (max-width: 975px) {
+        .taj {
+            text-align: center;
+        }
+        .ik {
+            margin-bottom: 40px;
+        }
     }
     @media screen and (min-width: 976px) {
         .taj {
