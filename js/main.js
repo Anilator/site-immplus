@@ -96,7 +96,7 @@
         postProcessing();
     }
     function postProcessing() {
-        var $images = $('.slider .separator');
+        var $images = $('.slider img').parents('.separator');
         var $wrap = $('<div class="slider__wrap"></div>').insertBefore($images.first());
         $images.detach().appendTo($wrap);
 
@@ -104,7 +104,6 @@
             item: 1,
             controls: false,
             pager: false,
-            adaptiveHeight: true,
         });
     }
 })();
