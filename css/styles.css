@@ -197,11 +197,12 @@
         background: url(loader.svg) center center no-repeat;
     }
     .app__page .app__row:first-child {
-        padding-top: 64px;
+        padding-top: 50px;
     }
     .app__row.fullwidth .app__block {
         max-width: none;
         padding: 0;
+        line-height: 0;
     }
 
     .app__page h2 {
