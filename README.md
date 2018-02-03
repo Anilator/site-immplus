@@ -1,4 +1,4 @@
-# A website for austrian houses developmer
+# A website for austrian houses developer
 
 This website uses Google Blogger as a backend for storing a content.  
 The website owner (my friend) has no knowledges is HTML and CSS but he can manage the website without major problems.
