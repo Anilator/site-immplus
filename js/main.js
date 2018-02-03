@@ -46,11 +46,11 @@
                 var blockNumber = getValue(labels, /block=(\d+)/);
                 if (!blockNumber) return;
                 var block = {
-                    title: post.title,
-                    html: post.content,
-                    bgColor: getValue(labels, /(#\w{3,6})/),
-                    menuNumber: getValue(labels, /menu=(\d+)/),
-                    class: getValue(labels, /class=(\w+)/),
+                    'title': post.title,
+                    'html': post.content,
+                    'bgColor': getValue(labels, /(#\w{3,6})/),
+                    'menuNumber': getValue(labels, /menu=(\d+)/),
+                    'class': getValue(labels, /class=(\w+)/),
                 };
                 content[blockNumber] = block;
             });
@@ -75,7 +75,7 @@
             if (!block) return;
             var id = i;
             var style = block.bgColor ? ' style="background: '+ block.bgColor +'"' : '';
-            var extraClass = block.class ? ' '+block.class : '';
+            var extraClass = block['class'] ? ' '+block['class'] : '';
             var blockHtml =
                 '<div class="app__row'+ extraClass +'"'+ style +'>'+
                     '<div class="app__block page" id="'+ id +'">'+
@@ -96,18 +96,21 @@
         postProcessing();
     }
     function postProcessing() {
-        var $images = $('.slider img').parents('.separator');
-        var $wrap = $('<div class="slider__wrap"></div>').insertBefore($images.first());
-        $images.detach().appendTo($wrap);
+        $('.slider').each(function(i, block){
+            var $images = $('img', $(block)).parents('.separator');
+            var $wrap = $('<div class="slider__wrap"></div>').insertBefore($images.first());
 
-        $wrap.lightSlider({
-            item: 1,
-            controls: false,
-            pager: false,
+            $images.detach().appendTo($wrap);
 
-            auto:true,
-            loop:true,
-            pauseOnHover: true,
+            $wrap.slick({
+                arrows: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+
+                autoplay: true,
+                autoplaySpeed: 2000,
+                zIndex: 9
+            });
         });
     }
 })();

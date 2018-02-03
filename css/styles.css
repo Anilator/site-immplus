@@ -235,6 +235,16 @@
 
 
 
+/** SPECIAL **
+    ===================================================== */
+    @media screen and (min-width: 976px) {
+        h2.middled {
+            float: left;
+            margin-top: 128px;
+        }
+    }
+
+
 /** GLOBAL MODIFIERS **
     ===================================================== */
     @media screen and (max-width: 975px) {
